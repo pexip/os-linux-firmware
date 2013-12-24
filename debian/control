@@ -1,10 +1,12 @@
 Source: linux-firmware
 Section: misc
 Priority: optional
-Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.6.1
 Build-Depends: debhelper (>= 4.0.0), rsync, gcc
 Vcs-Git: git://kernel.ubuntu.com/ubuntu/linux-firmware.git
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: linux-firmware
 Architecture: all
