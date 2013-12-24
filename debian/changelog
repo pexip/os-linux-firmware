@@ -1,0 +1,778 @@
+linux-firmware (1.79.9) precise; urgency=low
+
+  * Add Intel bluetooth files
+    linux-firmware: Add firmware patch file for Intel Bluetooth device(3160)
+    linux-firmware: update Intel Bluetooth firmware patch file
+    Add Intel Bluetooth firmware patch files
+    -LP: #1011423
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 21 Nov 2013 09:41:21 -0700
+
+linux-firmware (1.79.8) precise-proposed; urgency=low
+
+  * Add firmware files for QCA9564(Aphrodite)
+    -LP: #1245345 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 28 Oct 2013 13:09:54 -0600
+
+linux-firmware (1.79.7) precise-proposed; urgency=low
+
+  * rtlwifi: rtl8192ce: rtl8192se: rtl8192de: Update to rtl_92ce_92se_92de_linux_mac80211_0004.0816.2011 driver
+    Upstream cherry-pick e0836e6ec3568f54b7fac24b9e17bbe8c46eb508
+    Adds new firmware files rtlwifi/rtl8192cfwU.bin and rtlwifi/rtl8192cfwU_B.bin in support of linux v3.2
+    Updates for rtl8192se and rtl8192de
+    -LP: #1239414
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 15 Oct 2013 09:05:29 -0600
+
+linux-firmware (1.79.6) precise-proposed; urgency=low
+
+  * 31f6b3076bab3c4b65f67fdb232f4579ed828b4f linux-firmware: Update AMD microcode patch firmware files
+    This AMD ucode fixes some severe lockup issues on AMD family
+    15h CPUs when under high load. The fix for erratum #759 being
+    the most severe.
+    - LP: #1200533
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 12 Jul 2013 08:04:42 -0600
+
+linux-firmware (1.79.5) precise-proposed; urgency=low
+
+  * UBUNTU: Update asihpi firmware. The original firmware files were
+    simply non-functional.
+    -LP: #1122377
+  * rtlwifi/rtl8723e: Add firmware for new driver in LTS kernels,
+    Raring and newer.
+    -LP: #1187688
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Jul 2013 06:34:58 -0600
+
+linux-firmware (1.79.4) precise-proposed; urgency=low
+
+  * Add rt2x00 firmware file rt3290.bin
+    -LP: #1049466
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 19 Apr 2013 13:31:28 -0600
+
+linux-firmware (1.79.3) precise-proposed; urgency=low
+
+  * Add AMD microcode.
+    -LP: #1068299
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 06 Feb 2013 06:15:34 -0700
+
+linux-firmware (1.79.2) precise-proposed; urgency=low
+
+  * 0a9640c85c781a4ec0c82f16fbf7333b7ce6daa6 ar3k: add patch and sysconfig for Qualcomm Atheros AR9462
+    4a91e8c9f1e433143cf900487fbef01aa8b4c869 Update rampatch file for AR9462.
+    (both patches from upstream git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git)
+    - LP: #1024884 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Dec 2012 08:21:50 -0700
+
+linux-firmware (1.79.1) precise-proposed; urgency=low
+
+  * iwlwifi: update firmware for 6205
+    added iwlwifi-6000g2a-6.ucode
+    -LP: #1039856
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 22 Aug 2012 07:52:46 -0600
+
+linux-firmware (1.79) precise; urgency=low
+
+  * Remove obsolete firmware files.
+    UBUNTU: Remove obsolete bnx2 firmware
+    UBUNTU: Remove obsolete bnx2x firmware files
+    UBUNTU: Remove obsolete iwlwifi ucode files 
+    LP: #979887
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 12 Apr 2012 09:54:35 -0600
+
+linux-firmware (1.78) precise; urgency=low
+
+  * make sure all current iwlwifi ucode is in nic-firmware.lst
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 03 Apr 2012 12:44:54 -0600
+
+linux-firmware (1.77) precise; urgency=low
+
+  * Added phanfw.bin to nic-firmware-lst
+    -LP: #969304
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 03 Apr 2012 08:40:31 -0600
+
+linux-firmware (1.76) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git 8ccddee5ee23a0e192da38d98bcbbbb41bf385dd
+    rtl_nic: update firmware for RTL8411
+    rtl_nic: update firmware for RTL8111F
+    rtl_nic: update firmware for RTL8111E-VL
+    linux-firmware: ti-connectivity: update wl12xx firmwares
+    linux-firmware: ti-connectivity: change fw version info to
+    linux-firmware: update ti-connectivity licence
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 02 Apr 2012 13:52:00 -0600
+
+linux-firmware (1.75) precise; urgency=low
+
+  * Add bcm4329-fullmac-4.bin to nic-firmware.lst
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 29 Mar 2012 10:03:03 -0700
+
+linux-firmware (1.74) precise; urgency=low
+
+  * Added isci/isci_firmware.bin to scsi-firmware.lst 
+    -LP: #963306
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 23 Mar 2012 11:47:09 -0600
+
+linux-firmware (1.73) precise; urgency=low
+
+  * Updated ath3k-1.fw
+    -LP: #714862
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 22 Mar 2012 05:59:22 -0600
+
+linux-firmware (1.72) precise; urgency=low
+
+  * Add bnx2x firmware to the NIC firmware udeb
+    -LP: #944108
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 21 Mar 2012 14:07:59 -0600
+
+linux-firmware (1.71) precise; urgency=low
+
+  * Update carl9170 to 1.9.4
+    Note that this version only works with 3.1 and newer kernels.
+    -LP: #939231
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 23 Feb 2012 12:19:48 -0700
+
+linux-firmware (1.70) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git 09c949f6d3196a7199eb2c7015bfa5d34ed723b5
+    usbdux: Add usbduxsigma firmware
+    Remove execute permissions from various blobs
+    bnx2x: adding fw 7.2.16
+    cxgb4: Delete unused file cxgb4/t4fw-1.3.10.0.bin
+    linux-firmware: update cxgb3 driver firmware to revision 7.12.0
+    linux-firmware: add t4fw-1.4.16.0.bin firmware for cxgb4 driver.
+    linux-firmware: rename t4fw.bin
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 20 Feb 2012 07:15:29 -0700
+
+linux-firmware (1.69) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git 38118a598df73d5a9fd72bf04910e8298db82a46 
+    linux-firmware: brcm: add firmware for bcm43236 usb device
+    linux-firmware: brcm: remove nvram file for bcm4329 development board
+    linux-firmware: brcm: add bcm4330 firmware for brcmfmac
+    linux-firmware: brcm: add new bcm4329 firmware for brcmfmac
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 13 Feb 2012 07:03:52 -0700
+
+linux-firmware (1.68) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git a2995d38c234e3d767df7223d84a0f33a1a24997
+    firmware/isci: update to oem parameter format v1.3
+    cis: Add makefile for building CIS files from text format
+
+  * Add new iwlwifi ucode files
+    iwlwifi: add new firmware for 6000g2b devices
+    iwlwifi: add new firmware for 2030 devices
+    iwlwifi: add new firmware for 2000 devices
+    iwlwifi: add new firmware for 135 devcies
+    iwlwifi: add new firmware for 105 devices
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 23 Jan 2012 10:22:54 -0700
+
+linux-firmware (1.67) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git de960e5045cce262dabfba7aee621ddf27b67bdb
+    isci: Add firmware blob and sources
+    linux-firmware: bnx2: Update mips firmware to fix iSCSI problems
+    bnx2x: Update firmware to 6.2.9
+    WHENCE: bnx2x: Add the version 6.x.y files
+    bnx2x: replace FW to 6.2.5
+    bnx2x: Add 57712 support
+    bnx2x, cnic, bnx2i: use new FW/HSI
+    keyspan_pda: Add makefile for building from source
+    keyspan_pda: Fix parse error with as31 version 2.3.1
+    dvb-ttpci: Add source code and makefile
+    dsp56k: Add makefile for building from source
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 30 Dec 2011 08:21:54 -0700
+
+linux-firmware (1.66) precise; urgency=low
+
+  * Rebase against new upstream repo
+    git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git 4969d2da0c2019df2419cbe9d3f8f9f8e44a0f7d
+    rtl_nic: add new firmware for RTL8402
+    rtl_nic: add new firmware for RTL8411
+    rtl_nic: add new firmware for RTL8111F
+    rtl_nic: update firmware for RTL8111E-VL
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 16 Dec 2011 09:12:32 -0700
+
+linux-firmware (1.65) precise; urgency=low
+
+  * rtl_nic: add new firmware for RTL8111F
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 15 Dec 2011 15:14:21 -0700
+
+linux-firmware (1.64) precise; urgency=low
+
+  * Add all rtl_nic firmware files to nic-firmware
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 15 Dec 2011 13:16:42 -0700
+
+linux-firmware (1.63) precise; urgency=low
+
+  * Add rtl8168d-2.fw to nic-firmware.  LP: #900750.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 14 Dec 2011 15:21:51 -0800
+
+linux-firmware (1.62) precise; urgency=low
+
+  [ Colin Watson ]
+
+  * Make linux-firmware Multi-Arch: foreign
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 20 Nov 2011 16:39:07 -0700
+
+linux-firmware (1.61) precise; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 15888a2eab052ac3d3f49334e4f6f05f347a516e
+    bnx2x: Adding FW 7.0.29.0
+    linux-firmware: Add new firmware image for ath6kl driver
+    Update QLogic phanfw.bin
+    linux-firmware: Update cxgb4 firmware
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 28 Oct 2011 09:01:52 -0600
+
+linux-firmware (1.60) oneiric; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git f8ddc05e13c4c6dd9d725bc376b287f307eb223a
+    linux-firmware: wl12xx: Updated STA & AP FW for wl12xx-fw-3
+    linux-firmware: wl12xx: Updated STA & AP FW for WL128x & wl127x
+    libertas: add OLPC libertas blobs
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 23 Aug 2011 07:16:12 -0600
+
+linux-firmware (1.59) oneiric; urgency=low
+
+  * The last patch added some invalid firmware file names. Fixes FTBS.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Aug 2011 14:43:13 +0100
+
+linux-firmware (1.58) oneiric; urgency=low
+
+  [ Colin Watson ]
+
+  * Add firmware for ath9k_htc, rt2800*, and iwlagn NIC drivers.
+    d-i now supports WPA in Oneiric.  While soliciting testing of this, I
+    heard from testers with Atheros, Ralink, and Intel AGN chipsets, none of
+    whom were able to test WPA support in d-i because the relevant drivers
+    weren't delivered to d-i. This patch adds firmware for these drivers to
+    nic-firmware.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Aug 2011 07:24:41 -0600
+
+linux-firmware (1.57) oneiric; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 13f5008494268031d569f830d0955479bd5b9dfc
+    libertas: add cf8381 firmware v5.11.9p0
+    Add ene-ub6250 SD card reader firmware
+    linux-firmware: update firmware for Intel 6205 Series Wi-Fi Adapters
+    Qualcomm Atheros adds Bluetooth firmware for WiFi-BT combo module
+    Qualcomm Atheros updates firmware for WiFi-BT combo module
+    linux-firmware: Update patch and sysconfig files for AR3012
+    Add license for Terratec H5 DRX-K firmware
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 09 Aug 2011 13:05:01 -0600
+
+linux-firmware (1.56) oneiric; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git c8958f5de9a8a2fa590ab9e5641fe16ec044c200
+    bnx2x: Adding FW 7.0.23.0
+    -LP: #808884
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 11 Jul 2011 10:35:17 -0600
+
+linux-firmware (1.55) oneiric; urgency=low
+
+  * Update ath9k firmware to version 1.3
+    -LP: #800678
+
+  * update to iwlwifi-5000-ucode-8.83.5.1-1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 23 Jun 2011 07:57:39 -0600
+
+linux-firmware (1.54) oneiric; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 7522de5d09b434602389ea63058a1fe0cbac3b3f
+    iwlwifi: add updated firmware for 1000 devices
+    linux-firmware: update for Intel 6000 series Wi-Fi Adapters
+    firmware: add SUMO + SUMO2 firmwares for llano APUs.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 07 Jun 2011 08:06:45 -0600
+
+linux-firmware (1.53) oneiric; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git ae524638c277301a83daf126aaaf880738e2474b
+    rt2870sta: Use latest firmware for RT3070 and RT3071
+    rt2860sta: Use latest firmware for RT3090
+    Add source and copyright notice for CIS files from pcmcia-cs
+    linux-firmware: bnx2: Update firmware and version
+    linux-firmware: add new firmware for RTL8168E-VL
+    linux-firmware: update firmware for RTL8111E
+    Update QLogic phanfw.bin
+    linux-firmware: update ap firmware for mwl8k 8366 chip
+    linux-firmware: add cxgb4 firmware
+    linux-firmware: Initial release for Bluetooth init script
+    linux-firmware: Add firmware for RTL8168/8111E
+    linux-firmware: Add firmware for RTL8105E
+    STMICROELECTRONICS TDA7706 FW for BC and CB revision
+    linux-firmware: wl12xx- New STA&AP FW support WL128x + Update STA&AP FW for wl127x
+    linux-firmware: add myri10ge firmware
+    s2255: updated firmware f2255usb.bin
+    Add new firmware for AR7010 devices.
+    Add new firmware for AR9271 devices.
+    linux-firmware: add APIv2 AP firmware for marvell 8388
+    linux-firmware: updated firmware for BCM4313, BCM43224, and BCM43225 chips
+    linux-firmware: Removed codeversion from brcm firmware filenames.
+    linux-firmware: Simplified license file for brcm firmware
+    linux-firmware: add ath6kl firmware
+    linux-firmware: update Atheros firmware license
+    linux-firmware: Add sysconfig file
+    linux-firmware: Add patch and sysconfig files
+    linux-firmware: rt2800pci: rt2800usb: Firmware update
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 26 May 2011 08:46:57 -0600
+
+linux-firmware (1.52) natty; urgency=low
+
+  * Update Broadcom firmware for 2.6.38 (which requires some file
+    name changes).
+    -LP: #730215
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 20 Apr 2011 14:43:43 -0600
+
+linux-firmware (1.51) natty; urgency=low
+
+  * Added carl9170.fw for Atheros wireless AR9170 based devices.
+    -LP: #713987
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 20 Apr 2011 13:19:12 -0600
+
+linux-firmware (1.50) natty; urgency=low
+
+  * Added iwlwifi-1000-5.ucode
+    -LP: #752829
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 06 Apr 2011 13:26:02 -0600
+
+linux-firmware (1.49) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 5d6e01c4db4e8115296895efcf1feb80be93b8c4
+    linux-firmware: Add Patch and sysconfig files for AR300x
+
+  [ Leann Ogasawara ]
+
+  * UBUNTU: Rename bcm43xx Broadcom Firmware Files
+    -LP: #728746
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 18 Mar 2011 14:29:50 -0600
+
+linux-firmware (1.48) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git c2e530abf58116fbc4eb3baedeb5b3ed092b2c8a
+    linux-firmware: add cayman firmwares.
+    Update ar9271.fw
+    linux-firmware: wl12xx-Update AP Firmware
+    linux-firmware: Add patch and sysconfig files for AR3012.
+    linux-firmware: Remove ath3k-2.fw
+    linux-firmware: wl12xx-Update STA firmware
+    linux-firmware: wl12xx-update STA FW supports 11n BA sessions
+    iwlwifi: add updated firmware for 5000 devices
+    linux-firmware: add firmware files for Marvell 8366
+    linux-firmware: add Marvell SD8787 firmware image
+    linux-firmware: use single license file for Marvell firmwares
+    WHENCE: fix typos in "Realtek" and the filename containing its licence terms
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 03 Mar 2011 07:49:56 -0700
+
+linux-firmware (1.47) natty; urgency=low
+
+  * iwlwifi: Updated iwlwifi-6000g2a-5.ucode and iwlwifi-6000g2b-5.ucode to 17.168.5.2
+    17.168.5.2 fixes a showstopper issue that it can't connect to a 5G hidden SSID.
+    -LP: #716832
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 2fab48391fda8a914b55c8ac265eb3b6ee10ace8
+    linux-firmware: Add firmware file for Realtek RTL8192DE
+    linux-firmware: bnx2: Update firmware and version
+    linux-firmware: bnx2: Update firmware to 6.0.x.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 11 Feb 2011 07:01:23 -0700
+
+linux-firmware (1.46) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 39cd7bc45fc9301422bbf19077fd2079283e8a52
+  * linux-firmware: Add firmware file for Realtek RTL8192SE
+  * iwlwifi: add new firmware to 100 devices
+  * radeon: add new NI firmwares.
+  * Add firmware for VIA VT6656
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 24 Jan 2011 13:40:49 -0700
+
+linux-firmware (1.45) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 40c0f950be7040614dc45df54e25e54d00e3b73b
+    rtl_nic: Add firmware for RTL8111D(L)
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 03 Jan 2011 06:52:04 -0700
+
+linux-firmware (1.44) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git eb0ad4ffc1e2fe02bccae2f7102e3ffc8101ac55
+    iwlwifi: add updated firmware for 6050 devices
+    iwlwifi: add new firmware for 6030 devices
+    iwlwifi: add new firmware for 6005 devices
+    vxge: update PXE firmware to version
+    ath3k-fw: Fix EEPROM radio table issue.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 19 Dec 2010 16:27:16 -0700
+
+linux-firmware (1.43) natty; urgency=low
+
+  * iwlwifi: New 17.168.5.1 iwlwifi-6000g2b-5.ucode 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 19 Dec 2010 15:57:19 +0000
+
+linux-firmware (1.42) natty; urgency=low
+
+  * Updated Intel iwlwifi firmware
+    iwlwifi: 17.168.5.1 iwlwifi-6000g2a-5.ucode
+    iwlwifi: 41.28.5.1 iwlwifi-6050-5.ucode
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 13 Dec 2010 18:55:52 -0700
+
+linux-firmware (1.41) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 4844fa169c8d8562289243b54e822a00a0a01082
+    linux-firmware: Add firmware file for RTL8192CU
+    linux-firmware: wl12xx-Add Access Point Firmware & NVS to the wl12xx Driver
+    radeon: add support for PALM/SUMO firmwares.
+    mwl8335: add duplex firmware for 88w8335 PCI-based parts
+    Update QLogic phanfw.bin
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 13 Dec 2010 07:05:02 -0700
+
+linux-firmware (1.40) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 0892c5ad053f226699cabbd1df42a352cf6f6fce
+    vxge: update firmware to version 1.8.1
+    linux-firmware: Add firmware files for Realtek RTL8712U and RTL8192CE
+    linux-firmware: wl12xx-Add Firmware and NVS files to support Texas Instruments WLAN driver
+    Add firmware for Telgent 2300 V4L/DVB driver
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 18 Nov 2010 14:16:09 -0700
+
+linux-firmware (1.39) natty; urgency=low
+
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git e9f9e3a9b7d780e93ae869c1b8502c843bfd93a4
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 20 Oct 2010 12:38:08 -0600
+
+linux-firmware (1.38) maverick; urgency=low
+
+  * rtl8192sfw.bin: Update to 0017.0507.2010
+    LP: #618765
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 16 Aug 2010 12:57:15 -0600
+
+linux-firmware (1.37) maverick; urgency=low
+
+  [ Upstream ]
+  * Rebase against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 370066f09b4cc399935b514cba0c1f3cb4f7b350
+  * Add firmware for Modems based on Eagle Chipset
+  * Add firmware for Intel Wireless WiFi Link 6250AGN Adapter
+
+  [ Tim Gardner ]
+  * Add iwlwifi-6000-4.ucode 9.221.4.1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 21 Jun 2010 14:54:33 -0600
+
+linux-firmware (1.36) maverick; urgency=low
+
+  * Added iwlwifi-6050-4.ucode
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 04 Jun 2010 13:55:06 -0600
+
+linux-firmware (1.35) maverick; urgency=low
+
+  [ Chase Douglas ]
+
+  * Add AudioScience ASI series audio device firmware
+
+  [ Upstream ]
+
+  * Add RealTek RTL8192E firmware
+  * rebased against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git 25813c5c5ce0e8ce080de7a7fbf69b2c858798d2
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 25 May 2010 11:32:39 -0600
+
+linux-firmware (1.34) lucid; urgency=low
+
+  [ Chase Douglas ]
+
+  * iwlwifi: updated iwlwifi-6000-4.ucode ucode to 9.193.4.1
+
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 14 Apr 2010 11:37:50 +0100
+
+linux-firmware (1.33) lucid; urgency=low
+
+  [ Chase Douglas ]
+
+  * Added echoaudio firmware
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 17 Mar 2010 13:29:45 -0600
+
+linux-firmware (1.32) lucid; urgency=low
+
+  [ Manoj Iyer ]
+
+  * Added firmware for RealTek RTL8191/2SE or RTL8171 wireless MACs
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 04 Mar 2010 10:22:44 -0700
+
+linux-firmware (1.31) lucid; urgency=low
+
+  [ Chase Douglas ]
+
+  * Revert "firmware for prism54 kernel >=2.6.29"
+    The prism54 softmac firmware does not have a license statement, so the
+    firmware has been moved to linux-firmware-nonfree.
+    -LP: #524713
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 23 Feb 2010 11:31:46 -0700
+
+linux-firmware (1.30) lucid; urgency=low
+
+  * rebased against git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git d9076a54d74e371a11e1206b4a26e2e428045b9e
+  * Adds radeon firmware
+    -LP: #521737
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 19 Feb 2010 13:53:12 -0700
+
+linux-firmware (1.29) lucid; urgency=low
+
+  * Added firmware for prism54 kernel >=2.6.29
+    -LP: #509265
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 04 Feb 2010 13:18:25 -0700
+
+linux-firmware (1.28) lucid; urgency=low
+
+  * Exclude the debian directory when copying firmware.
+    -LP: #495431
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 16 Dec 2009 07:17:09 -0700
+
+linux-firmware (1.27) lucid; urgency=low
+
+  * Adopted git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 30 Nov 2009 14:37:34 -0700
+
+linux-firmware (1.26) karmic-proposed; urgency=low
+
+  * Erroneously renamed BCM2033-MD.hex
+    -LP: #156133
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 23 Nov 2009 08:06:20 -0700
+
+linux-firmware (1.25) karmic-proposed; urgency=low
+
+  * Rename BCM2033 firmware files with lower case extension
+    -LP: #156133
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sat, 07 Nov 2009 08:19:30 -0700
+
+linux-firmware (1.24) karmic; urgency=low
+
+  * iwlwifi: Added iwlwifi-6000-4.ucode
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sat, 17 Oct 2009 09:45:16 -0600
+
+linux-firmware (1.23) karmic; urgency=low
+
+  * Added Intel WiMAX firmware
+    -LP: #396554
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 14 Oct 2009 20:19:28 -0600
+
+linux-firmware (1.22) karmic; urgency=low
+
+  * Added firmware for dib0700 USB bridge
+    -LP: #446454
+    https://lists.ubuntu.com/archives/kernel-team/2009-October/007462.html
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 13 Oct 2009 13:35:20 -0600
+
+linux-firmware (1.21) karmic; urgency=low
+
+  * ar9170: Added one stage firmware
+    -LP: #386403
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 06 Oct 2009 09:21:52 -0600
+
+linux-firmware (1.20) karmic; urgency=low
+
+  * p54: Use 2.13.1.0.arm.0 firmware version for isl3886 USB devices
+    -LP: #437515
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 30 Sep 2009 09:01:46 -0600
+
+linux-firmware (1.19) karmic; urgency=low
+
+  * Added xc5000 firmware
+    -LP: #403642
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 16 Sep 2009 13:32:41 -0600
+
+linux-firmware (1.18) karmic; urgency=low
+
+  * Added ar9170 firmware.
+    -LP: #386403
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 14 Sep 2009 14:40:57 -0600
+
+linux-firmware (1.17) karmic; urgency=low
+
+  * Dropped firmware/dvb bits because of lack of licensing.
+    They have been moved to linux-firmware-nonfree.
+    -LP: #223212
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 14 Sep 2009 08:30:32 -0600
+
+linux-firmware (1.16) karmic; urgency=low
+
+  * Added iwlwifi-1000-ucode-128.50.3.1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 16 Aug 2009 20:26:34 -0600
+
+linux-firmware (1.15) karmic; urgency=low
+
+  * Updated iwlwifi 4965 ucode to 228.61.2.24
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 12 Jul 2009 15:19:45 -0600
+
+linux-firmware (1.14) karmic; urgency=low
+
+  * Updated firmware for ipw2200
+    - LP: #357968
+
+ -- Jamie Strandboge <jamie@ubuntu.com>  Fri, 10 Jul 2009 10:25:55 -0500
+
+linux-firmware (1.13) karmic; urgency=low
+
+  [ Florian Reinhard ]
+
+  * Updated firmware for prism54 chipsets
+    -LP: #339548
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 06 Jul 2009 07:17:59 -0600
+
+linux-firmware (1.12) karmic; urgency=low
+
+  * Updated iwlwifi 3945, 5000, and 5150 ucode
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 10 Jun 2009 07:46:51 -0400
+
+linux-firmware (1.11) jaunty; urgency=low
+
+  [ Pete Graner ]
+
+  * Added Hauppauge DVB-S2 PCI
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 02 Apr 2009 17:36:47 -0400
+
+linux-firmware (1.10) jaunty; urgency=low
+
+  [ Pete Graner ]
+
+  * Added firmware/ivtv BOM, v4l-cx23885-avcore-01.fw, and v4l-cx23885-enc.fw
+    LP: #321076
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 09 Mar 2009 16:18:37 -0700
+
+linux-firmware (1.9) jaunty; urgency=low
+
+  * Broadcom firmware file names must be upper case.
+    LP: #156133
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 20 Feb 2009 17:25:39 +0000
+
+linux-firmware (1.8) jaunty; urgency=low
+
+  * Collapsed all firmware/at76 files into firmware/ateml
+    Added licence and BOM files to iwlwifi, atmel, acx, aic94xx, zd1201
+    and zd1211.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 20 Feb 2009 16:41:12 +0000
+
+linux-firmware (1.7) jaunty; urgency=low
+
+  * Make soft links for ixp4xx firmware file names. The driver wants to read
+    file names of the form NPE-B, not NPE-B.01020201.
+    LP: #330506
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 17 Feb 2009 13:23:11 +0000
+
+linux-firmware (1.6) jaunty; urgency=low
+
+  * Add ixp4xx microcode
+  * Added some notes to the rules file.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 13 Feb 2009 21:53:28 +0000
+
+linux-firmware (1.5) jaunty; urgency=low
+
+  * Added firmware/dvb/dvb-usb-dib0700-1.20.fw 
+  * Added firmware/dvb/dvb-usb-af9015.fw
+  * Added firmware/libertas/lbtf_usb.bin and license.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 22 Jan 2009 15:28:21 +0000
+
+linux-firmware (1.4) jaunty; urgency=low
+
+  * Added firmware for RT 2860/2870
+  * Copy license files.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 21 Jan 2009 20:19:28 +0000
+
+linux-firmware (1.3) jaunty; urgency=low
+
+  * Updated iwlwifi 4965 firmware to version 228.57.2.23
+  * Updated iwlwifi 3945 firmware to version 15.28.2.8
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Dec 2008 18:53:05 +0000
+
+linux-firmware (1.2) intrepid; urgency=low
+
+  * Update copyright file with Intel and Adaptec licenses. Further updates
+    will occur in jaunty. LP: #284405
+
+ -- Ben Collins <ben.collins@canonical.com>  Mon, 27 Oct 2008 00:46:52 -0400
+
+linux-firmware (1.1) intrepid; urgency=low
+
+  * Added scsi-firmware udeb with qla and aic firmware
+
+ -- Ben Collins <ben.collins@canonical.com>  Wed, 15 Oct 2008 10:45:39 -0400
+
+linux-firmware (1.0) intrepid; urgency=low
+
+  * Initial packaging
+
+ -- Ben Collins <ben.collins@canonical.com>  Mon, 16 Jun 2008 18:39:46 -0400
